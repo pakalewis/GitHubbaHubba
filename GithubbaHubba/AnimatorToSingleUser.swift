@@ -25,7 +25,7 @@ class AnimatorToSingleUser: NSObject, UIViewControllerAnimatedTransitioning {
         toVC.view.alpha = 0.0
         
         let collectionView = fromVC.collectionView
-        let index = collectionView.indexPathsForSelectedItems()?.first as NSIndexPath
+        let index = collectionView.indexPathsForSelectedItems().first as NSIndexPath
         let cell = collectionView.cellForItemAtIndexPath(index) as UserCell
         fromVC.initialImageFrame = fromVC.view.convertRect(cell.userAvatarImageView.frame, fromView: cell.userAvatarImageView)
         

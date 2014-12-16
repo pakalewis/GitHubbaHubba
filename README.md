@@ -1,18 +1,32 @@
+Week 3 project for the Code Fellows iOS Development Accelerator
+
 This is a sample client app to access your GitHub account.
 The user can log in and view their profile, search for repos, and search for other users.
 
+__________________________________________________________________________________________
+![](https://github.com/pakalewis/GitHubbaHubba/blob/master/screenshot1.png)
+__________________________________________________________________________________________
+![](https://github.com/pakalewis/GitHubbaHubba/blob/master/screenshot2.png)
+__________________________________________________________________________________________
+
 
 Features:
+- UITableView
+- NSURLSession
+- UISearchBar
+- NSUserDefaults
+- WKWebView
 - OAuth access to GitHub
 - Split view controller
 - Network calls to GitHub API
-
+- JSON parsing
+- Extension of the String class which has function that uses Regex (NSRegularExpression)
 
 
 
 Monday
 - Implement a split view controller in your app to control your interface
-- Create a network controller and implement a method that fetches repositories based on a search term. Instead of pointing the request at the Actual Github API server, use the node script provided in the class repository and point the request at your own machine. Since our apps aren't authenticated with Github yet we will hit the rate limit after 5 unauthenticated calls from our IP. The node script is called server.js. Just run it with your node command in terminal.
+- Create a network controller and implement a method that fetches repositories based on a search term.
 - Create a RepositoryViewController and parse through the JSON returned fromm the server into model objects and display the results in a table view.
 - Devise a way to show the master view controller when the app is first launched on iPhone, not the detail view controller.
 
@@ -34,5 +48,3 @@ Thursday
 
 Challenges:
 - Implement the 'My Profile' view controller in your app. This should display info about the currently logged in user (their bio, if they are hirable, their count of public and private repos, etc).
-- Implement a way for the logged in user to create a repo from the app. Good luck and god bless.
-- Implement a way for the user to update their bio.
